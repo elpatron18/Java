@@ -1,4 +1,4 @@
-package PR1.PR1_Aufgaben.StringStuff;
+package PR1.PR1_Aufgaben.A000_StringStuff;
 
 public class A3 {
 

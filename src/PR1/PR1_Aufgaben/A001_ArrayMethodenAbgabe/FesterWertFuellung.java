@@ -1,4 +1,4 @@
-package PR1.PR1_Aufgaben.ArrayMethodenAbgabe;
+package PR1.PR1_Aufgaben.A001_ArrayMethodenAbgabe;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package PR1.PR1_Aufgaben.A001;
+package PR1.PR1_Aufgaben.A002;
 
 public class Rechteck {
 
