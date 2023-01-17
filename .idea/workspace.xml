@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b16de753-d57b-4cb9-afad-89f4055444ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Schule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PR1/PR1_Aufgaben/A001/Rechteck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PR1/PR1_Aufgaben/A002_Ueberladung/Punkt.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IcnNUmBbq0KuDupwFL8Bwm2NSe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/timoa/IdeaProjects/Schule",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\timoa\IdeaProjects\Schule" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\timoa\IdeaProjects\Schule\src\PR1\PR1_Aufgaben\A002" />
+      <recent name="C:\Users\timoa\IdeaProjects\Schule\src\PR1\PR1_Aufgaben\A001" />
+      <recent name="C:\Users\timoa\IdeaProjects\Schule\src\PR1\PR1_Aufgaben" />
+      <recent name="C:\Users\timoa\IdeaProjects\Schule\PR1 Aufgaben" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b16de753-d57b-4cb9-afad-89f4055444ec" name="Changes" comment="" />
+      <created>1670489702752</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670489702752</updated>
+      <workItem from="1670489705807" duration="7496000" />
+      <workItem from="1670569147465" duration="888000" />
+      <workItem from="1670570341816" duration="3402000" />
+      <workItem from="1670920941023" duration="70000" />
+      <workItem from="1670930034002" duration="10000" />
+      <workItem from="1671042560504" duration="5754000" />
+      <workItem from="1671086330059" duration="6224000" />
+      <workItem from="1671102884646" duration="1876000" />
+      <workItem from="1673935457901" duration="602000" />
+      <workItem from="1673936274336" duration="2222000" />
+      <workItem from="1673957631971" duration="1350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
