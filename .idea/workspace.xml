@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16de753-d57b-4cb9-afad-89f4055444ec" name="Changes" comment="1. Commit" />
+    <list default="true" id="b16de753-d57b-4cb9-afad-89f4055444ec" name="Changes" comment="1. Commit">
+      <change beforePath="$PROJECT_DIR$/src/PR1/KA3_Uebung/BD3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR1/KA3_Uebung/BD3.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +74,7 @@
       <workItem from="1671102884646" duration="1876000" />
       <workItem from="1673935457901" duration="602000" />
       <workItem from="1673936274336" duration="2222000" />
-      <workItem from="1673957631971" duration="1734000" />
+      <workItem from="1673957631971" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="1. Commit">
       <created>1673959250384</created>
@@ -81,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673959250384</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Commit">
+      <created>1673959547226</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673959547226</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
