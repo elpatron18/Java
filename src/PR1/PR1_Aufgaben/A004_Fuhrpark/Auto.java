@@ -92,14 +92,28 @@ public class Auto {
         return kennzeichen;
     }
 
-    public void setKennzeichen(String kennzeichen) {
+
+
+
+    public Auto(String typ, int gewicht, boolean automatikgetriebe, int kw, String farbe, int sitze, String modell, String marke, double mietpreise, String kennzeichen) {
+        this.typ = typ;
+        this.gewicht = gewicht;
+        this.automatikgetriebe = automatikgetriebe;
+        this.kw = kw;
+        this.farbe = farbe;
+        this.sitze = sitze;
+        this.modell = modell;
+        this.marke = marke;
+        this.mietpreise = mietpreise;
         this.kennzeichen = kennzeichen;
     }
 
     public Auto () {
 
     }
-
+    public void setKennzeichen(String kennzeichen) {
+        this.kennzeichen = kennzeichen;
+    }
     public double berechneKmStand(double endkm) {
         return endkm;
     }
