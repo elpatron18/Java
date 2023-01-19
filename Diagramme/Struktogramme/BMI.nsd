@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="BMI,,Variablen,&#34;double gewicht;&#34;,&#34;double größe;&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;print(&#34;&#34;Körpergewicht in KG und größe in M angeben&#34;&#34;)&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;Scanner ... (&#34;&#34;Wieviel wiegen sie&#34;&#34;)&#34;,&#34;gewicht &#60;- &#34;,,&#34;Scanner ... (&#34;&#34;Wie Groß sind sie&#34;&#34;)&#34;,&#34;größe &#60;-&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text=",&#34;double bmi = gewicht / math.pow(größe, 2)&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;print bmi&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>
