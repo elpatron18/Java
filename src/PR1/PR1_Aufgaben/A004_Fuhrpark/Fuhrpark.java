@@ -7,4 +7,5 @@ public class Fuhrpark {
     private Auto sportwagen;
     private Auto stadtwagen;
 
+
 }
