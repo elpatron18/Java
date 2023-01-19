@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="Radfahrer,,Initialisieren,&#34;double g = 9.81&#34;,,Deklarieren,&#34;double m_fahrer &#60;- gewicht&#34;,&#34;double m_rad &#60;- gewicht vom rad&#34;,&#34;double h_start &#60;- Startpunkt in M über NN&#34;,&#34;double h_ziel &#60;- Zeilpunkt in M über NN&#34;,&#34;int t &#60;- Zeit in Minuten&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;m = m_fahrer + m_rad&#34;,,&#34;steigung = h_ziel - h start&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;P = (m * g  * steigung) / t &#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>

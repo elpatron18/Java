@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root text="DerNettoLohn,,Konstante,&#34;double lohns &#60;- 0,2&#34;,&#34;double rente &#60;- 0,09&#34;,&#34;double krank &#60;- 0,073&#34;,&#34;double arbeitslos &#60;- 0,0325&#34;,&#34;double pflege &#60;- 0,008&#34;,,Variablen,&#34;double lohn;&#34;,&#34;double abzüge;&#34;,&#34;double soli &#60;- lohn * 0,04&#34;,&#34;double netto;&#34;" comment="" type="program" style="nice">
+ <children>
+
+<instruction text="&#34;Print Steuern Prozente&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;lohn &#60;- Scanner &#34;&#34;Was ist ihr lohn?&#34;&#34;&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;Abzüge = lohn * (lohns + rente +  krank + arbeitslos + pflege)  + soli&#34;,,&#34;netto = lohn - abzüge&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+<instruction text="&#34;print Alle Steuern&#34;" comment="" color="FFFFFF" rotated="0"></instruction>
+ </children>
+</root>
