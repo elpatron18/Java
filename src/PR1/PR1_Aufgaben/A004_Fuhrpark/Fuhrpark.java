@@ -7,5 +7,9 @@ public class Fuhrpark {
     private Auto sportwagen;
     private Auto stadtwagen;
 
+    public Fuhrpark(Auto sportwagen, Auto stadtwagen) {
+        this.sportwagen = sportwagen;
+        this.stadtwagen = stadtwagen;
+    }
 
 }

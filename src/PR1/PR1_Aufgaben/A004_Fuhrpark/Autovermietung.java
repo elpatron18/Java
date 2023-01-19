@@ -7,7 +7,6 @@ public class Autovermietung {
         Auto mercedes = new Auto();
         Auto ferrari = new Auto();
 
-        //test
 
     }
 
