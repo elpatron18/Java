@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"Alle Packages","u":"allpackages-index.html"},{"l":"PR1.PR1_Aufgaben.A010_Dokumentation"}];updateSearchResults();

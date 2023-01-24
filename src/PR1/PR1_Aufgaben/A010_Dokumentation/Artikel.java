@@ -9,28 +9,23 @@ package PR1.PR1_Aufgaben.A010_Dokumentation;
 
 public class Artikel {
 
+    /**
+     * Der aktuelle Merhwertsteuersatz.
+     * Er liegt zur Zeit bei {@value} Prozent.
+     * @since 1.0
+     */
+
      final static int mehrwertsteuer = 21;
 
-     /**
-      * Der aktuelle Merhwertsteuersatz.
-      * Er liegt zur Zeit bei {@value #mehrwertsteuer} Prozent.
-      *
-      * @since 1.0
-      */
-
      private static String artikelname;
-
-    public static String getArtikelname() {
-        return artikelname;
-    }
 
     /**
      * Liefert den Namen eines Artikels zurück.
      * @return Name des Artikels
      */
 
-    public static void setArtikelname(String artikelname) {
-        Artikel.artikelname = artikelname;
+    public static String getArtikelname() {
+        return artikelname;
     }
 
     /**
@@ -38,5 +33,8 @@ public class Artikel {
      * @param artikelname Zeichenkette die den Namen des Artikels übergibt
      */
 
+    public static void setArtikelname(String artikelname) {
+        Artikel.artikelname = artikelname;
+    }
 
 }
