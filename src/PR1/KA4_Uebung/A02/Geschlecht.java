@@ -12,5 +12,4 @@ public enum Geschlecht{
             case DIVERS -> "divers";
         };
     }
-
 }

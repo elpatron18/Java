@@ -17,7 +17,7 @@ public class Abteilung {
     }
 
     public void zeigAlle() {
-        for (Angestellter a : this.angestelltenListe) System.out.println(a.name);
+        for (Angestellter a : this.angestelltenListe) System.out.println(a.getName());
     }
 
 
