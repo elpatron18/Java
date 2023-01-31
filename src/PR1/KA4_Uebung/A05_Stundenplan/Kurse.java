@@ -1,4 +1,4 @@
-package PR1.KA4_Uebung.Stundenplan;
+package PR1.KA4_Uebung.A05_Stundenplan;
 
 public enum Kurse {
     IGW(1, "405", Lehrer.BURGER), WPR(2, "F111", Lehrer.RIDDER),
