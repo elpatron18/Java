@@ -1,4 +1,4 @@
-package BubbleSort;
+package IGW.BubbleSort;
 
 public class main {
 

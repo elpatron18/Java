@@ -1,6 +1,6 @@
 package PR1.KA4_Uebung.A02;
 
-public enum Geschlecht {
+public enum Geschlecht{
 
     MANN, FRAU, DIVERS;
 

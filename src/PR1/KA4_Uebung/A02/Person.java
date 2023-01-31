@@ -3,7 +3,7 @@ package PR1.KA4_Uebung.A02;
 /* Erstelle eine Klasse, die eine Person repräsentiert, mit Attributen für den Namen, das Alter und das Geschlecht.
  Überlade die toString-Methode, um die Details der Person auszugeben.*/
 
-public class Person {
+public class Person extends Starter {
 
     String name;
     int alter;
