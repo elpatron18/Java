@@ -3,13 +3,11 @@ package PR1.PR1_Aufgaben.A003_Ueberladung;
 public class Punkt {
 
     private double x, y;
-    private int norm = 1;
 
-    public void setNorm(int i){
-        this.norm = i;
+    public Punkt(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
-
-    public Punkt(double x, double y) {}
 
 
     public double getX() {
@@ -53,12 +51,20 @@ public class Punkt {
     public void spiegelnY(){
         this.setY(this.getY() * -1);
     }
-    public static double dist(Punkt a, Punkt b, int norm) {
+    public static double dist(Punkt a, Punkt b, Norm norm) {
         double distance = 0;
-        if (norm == 1) distance = Math.sqrt(Math.pow((a.getX() - b.getX()), 2) + Math.pow((a.getY() - b.getY()), 2));
-        if (norm == 2) distance = Math.abs(a.getX()-b.getX()) + Math.abs(a.getY()-b.getY());
+        if (norm == Norm.SVP) distance = Math.sqrt(Math.pow((a.getX() - b.getX()), 2) + Math.pow((a.getY() - b.getY()), 2));
+        if (norm == Norm.GERADE) distance = Math.abs(a.getX()-b.getX()) + Math.abs(a.getY()-b.getY());
 
         return distance;
+    }
+
+    public static void main(String[] args) {
+        Punkt p1 = new Punkt(0, 0);
+        Punkt p2 = new Punkt(1, 1);
+
+        System.out.println( dist(p1, p2, Norm.SVP));
+        System.out.println( dist(p1, p2, Norm.GERADE));
     }
 
 

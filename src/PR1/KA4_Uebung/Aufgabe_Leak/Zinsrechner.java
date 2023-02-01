@@ -6,6 +6,8 @@ import java.util.Scanner;
  *
  * @author Timo Antoniak
  * @version 1.0
+ *
+ * @see java.util.Scanner
  * */
 
 
