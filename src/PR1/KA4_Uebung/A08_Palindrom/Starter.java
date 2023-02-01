@@ -7,7 +7,7 @@ public class Starter {
         boolean equal = true;
         String s = Integer.toString(i);
 
-        if (1 + 1 <= s.length())
+        if (s.length() <= 2)
             if (s.charAt(0) == s.charAt(s.length()-1)) palindrome(Integer.parseInt(s.substring(1, s.length()-2)));
             else equal = false;
 
