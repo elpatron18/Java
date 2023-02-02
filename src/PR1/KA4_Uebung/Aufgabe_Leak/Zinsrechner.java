@@ -12,7 +12,8 @@ import java.util.Scanner;
 
 
 public class Zinsrechner {
-
+    
+    //psvm nicht vollständig
     public static void main(String[] args) {
 
         double dstartkapital = 0.0;
