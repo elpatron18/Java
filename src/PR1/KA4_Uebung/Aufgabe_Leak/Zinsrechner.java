@@ -24,6 +24,8 @@ public class Zinsrechner {
         System.out.println("Geben Sie das Startkapital an");
         dstartkapital = sc.nextDouble();
 
+        System.out.println(kapital(1, 100));
+
     }
 
     /*** Leifert Kapital zurück
