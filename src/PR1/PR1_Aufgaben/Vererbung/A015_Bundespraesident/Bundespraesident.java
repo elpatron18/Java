@@ -15,15 +15,3 @@ public class Bundespraesident extends Kunde{
         Kunde k = new Bundespraesident("test", 4);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-//von Timo's GitHub
