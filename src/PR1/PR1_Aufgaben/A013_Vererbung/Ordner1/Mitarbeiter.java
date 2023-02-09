@@ -1,6 +1,6 @@
 package PR1.PR1_Aufgaben.A013_Vererbung.Ordner1;
 
-public class Mitarbeiter extends Azubi {
+public class Mitarbeiter{
 
     private String name;
     private String vorname;
