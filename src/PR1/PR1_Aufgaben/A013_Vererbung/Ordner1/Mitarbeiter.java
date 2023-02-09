@@ -29,4 +29,11 @@ public class Mitarbeiter{
     public void setGehalt(double gehalt) {
         this.gehalt = gehalt;
     }
+
+    public Mitarbeiter(String name, String vorname, double gehalt) {
+        this.name = name;
+        this.vorname = vorname;
+        this.gehalt = gehalt;
+    }
+    public Mitarbeiter() {    }
 }
