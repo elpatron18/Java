@@ -1,4 +1,4 @@
-package PR1.PR1_Aufgaben.A013_Vererbung.Ordner1;
+package PR1.PR1_Aufgaben.A013_Vererbung;
 
 public class Fuehrungskraft extends Mitarbeiter {
 
