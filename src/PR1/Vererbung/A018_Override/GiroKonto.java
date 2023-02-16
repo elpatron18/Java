@@ -10,6 +10,7 @@ public class GiroKonto extends Bankkonto{
     public void einzahlen(double x) {
         this.kontostand += x - this.gebuehr;
     }
+    @Override
     public void auszahlen(double x) {
         this.kontostand -= x - this.gebuehr;
     }

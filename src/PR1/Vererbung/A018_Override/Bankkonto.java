@@ -7,7 +7,6 @@ public abstract class Bankkonto {
     public Bankkonto(double kontostand) {
         this.kontostand = kontostand;
     }
-
     public double getKontostand() {
         return this.kontostand;
     }
