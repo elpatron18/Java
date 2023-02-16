@@ -12,4 +12,12 @@ public class Sparkonto extends Bankkonto{
         this.einzahlen(kontostand * (zinssatz / 100));
     }
 
+    @Override
+    public void auszahlen(double betrag) {
+        this.kontostand -= betrag;
+    }
+    @Override
+    public void einzahlen(double betrag) {
+        this.kontostand += betrag;
+    }
 }

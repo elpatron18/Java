@@ -1,6 +1,6 @@
 package PR1.Vererbung.A018_Override;
 
-public class Bankkonto {
+public abstract class Bankkonto {
 
     protected double kontostand;
 
@@ -9,14 +9,9 @@ public class Bankkonto {
     }
 
     public double getKontostand() {
-        return kontostand;
+        return this.kontostand;
     }
 
-    public void einzahlen(double betrag) {
-        this.kontostand += betrag;
-    }
-
-    public void auszahlen(double betrag) {
-        this.kontostand -= betrag;
-    }
+    public abstract void einzahlen(double betrag);
+    public abstract void auszahlen(double betrag);
 }
