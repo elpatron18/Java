@@ -9,5 +9,6 @@ public class Schueler extends Person{
     }
     public void setSeinTablet(Tablet pNeuesTablet) {
         this.meineTablets.add(pNeuesTablet);
+        this.seinTablet = this.meineTablets.get(meineTablets.size()-1);
     }
 }
