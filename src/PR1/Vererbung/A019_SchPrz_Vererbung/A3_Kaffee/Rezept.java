@@ -4,13 +4,6 @@ public class Rezept {
 
     String name;
 
-    ZutatenBehaelter wasser = new ZutatenBehaelter("Wasser");
-    ZutatenBehaelter kaffee = new ZutatenBehaelter("Kaffee");
-    ZutatenBehaelter kakao = new ZutatenBehaelter("Kakao");
-    ZutatenBehaelter zucker = new ZutatenBehaelter("Zucker");
-    ZutatenBehaelter milch = new ZutatenBehaelter("Milch");
-    AbfallBehaelter abfall = new AbfallBehaelter();
-
     double wasserM;
     double kaffeeM;
     double kakaoM;
@@ -30,12 +23,12 @@ public class Rezept {
     }
 
     public void machen(){
-        wasser.entfernen(wasserM);
-        kaffee.entfernen(kaffeeM);
-        kakao.entfernen(kakaoM);
-        zucker.entfernen(zuckerM);
-        milch.entfernen(milchM);
+        KaffeeMaschine.wasser.entfernen(wasserM);
+        KaffeeMaschine.kaffee.entfernen(kaffeeM);
+        KaffeeMaschine.kakao.entfernen(kakaoM);
+        KaffeeMaschine.zucker.entfernen(zuckerM);
+        KaffeeMaschine.milch.entfernen(milchM);
 
-        abfall.fuell(kaffeeM);
+        KaffeeMaschine.abfall.fuell(kaffeeM);
     }
 }
