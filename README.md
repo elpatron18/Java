@@ -1,6 +1,9 @@
-Alle Java-Programme, seit Janar 2023
+Alle Java-Programme, seit ca. Januar 2023
 
-## Aktuell: [```Übungen für KA 4```](src/PR1/KA4_Uebung)
+## Aktuell: 
+- [```Übungen für KA 4```](src/PR1/KA4_Uebung) </li>
+
+---
 
 # Hierarchie
 
@@ -31,8 +34,6 @@ Alle Java-Programme, seit Janar 2023
       </h4></li>
     </ol>
   </li>
-  <h3><li>JavaDocs</h3></li>
-  <h3><li>Diagramme</h3></li>
+  <h3><li><a href="JavaDocs">JavaDoc</a></h3></li>
+  <h3><li><a href="Diagramme">Diagramme</a></h3></li>
 </ol>
-
-
