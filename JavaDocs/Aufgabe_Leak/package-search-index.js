@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"PR1.KA4_Uebung.Aufgabe_Leak"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"KA4_Uebung.Aufgabe_Leak"}];updateSearchResults();
