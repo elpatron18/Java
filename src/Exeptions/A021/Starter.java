@@ -1,6 +1,6 @@
-package PR1.Exeptions.A021;
+package Exeptions.A021;
 
-public class starter {
+public class Starter {
 
     public static void main(String[] args) {
 
