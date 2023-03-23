@@ -12,6 +12,8 @@ public class Tester {
             for (double d : MNFBerechner.berechneMNF(1, 0, 0)) System.out.println(d);
 
         }
-        catch (ArithmeticException e) { System.out.println(e.getMessage());}
+        catch (ArithmeticException a) { System.out.println(a.getMessage());}
+        catch (Exception e) { System.out.println(e.getMessage());}
     }
+
 }
