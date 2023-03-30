@@ -24,7 +24,7 @@ public class Industrieroboter {
 
     public boolean werkzeugEntfernen(int platz) {
         if (platz >= 0 && platz <= 10 && werkzeugKasten.get(platz) != null){
-            werkzeugKasten.remove(platz);
+            werkzeugKasten.set(platz, null);
             return true;
         }
         else return false;
