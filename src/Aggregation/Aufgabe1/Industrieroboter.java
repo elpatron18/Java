@@ -8,9 +8,11 @@ public class Industrieroboter {
 
     final int maxAnzWerkzeuge = 10;
 
-    List<Werkzeug> werkzeugKasten = new ArrayList<>(Collections.nCopies(maxAnzWerkzeuge + 1, null));
+    List<Werkzeug> werkzeugKasten = new ArrayList<>();
 
-    public Industrieroboter() {    }
+    public Industrieroboter() {
+        for (int i = 0; i <= maxAnzWerkzeuge; i++) werkzeugKasten.add(null);
+    }
 
     public boolean werkzeugHinzufuegen(int platz, Werkzeug neu) {
         if (platz >= 0 && platz <= 10 && werkzeugKasten.get(platz) == null){
