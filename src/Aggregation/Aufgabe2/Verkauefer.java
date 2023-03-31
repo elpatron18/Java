@@ -1,8 +1,5 @@
 package Aggregation.Aufgabe2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Verkauefer {
     public static Artikel [] sortiment = new Artikel[100];
 
