@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"KA4_Uebung.Aufgabe_Leak"}];updateSearchResults();

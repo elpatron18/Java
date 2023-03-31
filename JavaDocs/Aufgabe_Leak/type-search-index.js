@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KA4_Uebung.Aufgabe_Leak","l":"Zinsrechner"}];updateSearchResults();

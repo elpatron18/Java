@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"PR1.SonstigeA010_Dokumentation","c":"Artikel","l":"Artikel()","u":"%3Cinit%3E()"},{"p":"PR1.SonstigeA010_Dokumentation","c":"Artikel","l":"getArtikelname()"},{"p":"PR1.SonstigeA010_Dokumentation","c":"Artikel","l":"setArtikelname(String)","u":"setArtikelname(java.lang.String)"}];updateSearchResults();
