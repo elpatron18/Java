@@ -10,18 +10,19 @@ public class Aufgabe2 {
 
         liste.add("Hans");
         liste.add("Emil");
-       liste.add("Frauke");
-       liste.add("Evelyn");
+        liste.add("Frauke");
+        liste.add("Evelyn");
 
-       for (String element : liste) System.out.println(element);
+        System.out.println(liste);
 
         System.out.println("Index von Frauke: " + liste.indexOf("Frauke"));
 
         //Einfügen von Hannah vor Frauke
         liste.add(liste.indexOf("Frauke"), "Hanna");
 
-        System.out.println("Zweite liste: ");
-        for (String element : liste) System.out.println(element);
+        System.out.println("Zweite Liste: ");
+
+        System.out.println(liste);
 
     }
 
