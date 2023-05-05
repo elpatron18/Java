@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Inventory {
-
     public static List<Item> sortiment = new ArrayList<>();
-
     public static void addItem(Item item) {
         sortiment.add(item);
     }
