@@ -1,4 +1,4 @@
-package Auslesen;
+package Auslesen_Einlesen;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

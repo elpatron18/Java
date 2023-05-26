@@ -1,4 +1,4 @@
-package Auslesen.Begruessen;
+package Auslesen_Einlesen.Begruessen;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;

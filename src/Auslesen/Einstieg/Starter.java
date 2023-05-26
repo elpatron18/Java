@@ -1,4 +1,4 @@
-package Auslesen.Einstieg;
+package Auslesen_Einlesen.Einstieg;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
