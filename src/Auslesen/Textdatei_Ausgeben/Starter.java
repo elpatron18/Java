@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.NoSuchFileException;
+import java.text.DecimalFormat;
 
 public class Starter {
 
@@ -11,6 +12,8 @@ public class Starter {
 
         String speicherort = "C:\\Users\\Timo\\IdeaProjects\\Java\\src\\Auslesen\\Textdatei_Ausgeben\\daten.txt";
         FileWriter fw = null;
+
+        DecimalFormat df = new DecimalFormat("#.##");
 
         try {
             File f = new File(speicherort);
@@ -30,10 +33,10 @@ public class Starter {
             double wz = 0;
 
             for (int i = 0; i <= 10; i++) {
-                zahl += i;
-                qz += i * i;
-                wz += Math.sqrt(i);
-                fw.write("\n" + zahl + "\t" + qz + "\t" + wz);
+                zahl = i;
+                qz = i * i;
+                wz = Math.sqrt(i);
+                fw.write("\n" + zahl + "\t" + qz + "\t" + df.format(wz));
             }
 
         } catch (NoSuchFileException e) {
