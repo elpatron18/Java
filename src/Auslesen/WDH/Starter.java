@@ -7,7 +7,7 @@ import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 
 public class Starter {
-    static String filename = "C:\\Users\\Timo\\IdeaProjects\\Java\\src\\Auslesen\\WDH\\daten.txt";
+    static String filename = "C:\\Users\\timoa\\Documents\\IntelliJ\\GitClone\\src\\Auslesen\\WDH\\daten.txt";
 
     public static void main(String[] args) throws IOException {
 
@@ -35,11 +35,12 @@ public class Starter {
                 wurzelzahl += Double.parseDouble(datenarray[2].replace(",", "."));
             }
 
+
             System.out.println("*****************");
             System.out.println(zahl + "\t" + quadratzahl + "\t" + wurzelzahl);
 
         } catch (NoSuchFileException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Test: " + e.getMessage());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
