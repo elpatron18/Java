@@ -7,7 +7,7 @@ public class DBTabelleLesen implements Daten{
         Connection con = null;
         try {
             Class.forName(dbTreiber);
-            String s = "jdbc:mariadb://" + host + ":" + port + "/" + db + "?" + "user=" + user + "&" + "password=" + passwd;
+            String s = "jdbc:mariadb://" + host + ":" + port + "/" + db + "?" + "user=" + user + "&password=" + passwd;
             con = DriverManager.getConnection(s);
         } catch (ClassNotFoundException e) {
             System.out.println("Treiber nicht gefunden");
