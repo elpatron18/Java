@@ -19,7 +19,7 @@ public class DBTabelleLesen implements Daten {
         }
         return con;
     }
-    public static void speicherTabelle(Connection dbVerbindung, ArrayList <Gericht> speisekarte)
+    public static void speicherTabelle(Connection dbVerbindung, ArrayList <Gericht> speisekarte, ArrayList <Rabattcode> codes)
     {
         String sQuery = "SELECT Name, Preis, Bildadresse,"
                 + " ID FROM speisekarte";
@@ -42,5 +42,58 @@ public class DBTabelleLesen implements Daten {
         catch (SQLException e) {
             System.out.println(e.getMessage());;
         }
+
+        String sQuery2 = "SELECT Code, Rabatt From rabattcodes";
+        try (Statement stmt = dbVerbindung.createStatement()) {
+            ResultSet rs = stmt.executeQuery(sQuery2);
+            while (rs.next()) {
+                String sCode = rs.getString("Code");
+                double sRabatt = rs.getDouble("Rabatt");
+
+                System.out.println(sCode + " " + sRabatt);
+
+                Rabattcode rc = new Rabattcode(sCode, sRabatt);
+                codes.add(rc);
+            }
+        }
+        catch (SQLException e) {
+            System.out.println(e.getMessage());;
+        }
     }
+    public static void bestellungVerarbeiten(Connection dbVerbindung, Bestellung bestellung) {
+
+        try (Statement stmt = dbVerbindung.createStatement()) {
+            String sQuery = "INSERT INTO `bestellungen`(`ID`, `Datum`, `Summe`) " +
+                    "VALUES ('" + bestellung.id + "','" + bestellung.datum + "','" + bestellung.summe + "')";
+           stmt.executeQuery(sQuery);
+           LoggerUtil.log("Neue Bestellung \n" + "ID:" + bestellung.id + " | " + bestellung.summe);
+        }
+        catch (SQLException e) {
+            System.out.println("Fehler: " +  e.getMessage());;
+        }
+    }
+    public static int wieVieleBestellungen(Connection dbVerbindung) throws SQLException {
+
+        Statement stmt = dbVerbindung.createStatement();
+        String sQuery = "SELECT COUNT(*) AS IDs FROM bestellungen";
+        ResultSet rs = stmt.executeQuery(sQuery);
+        while (rs.next()) {
+            return rs.getInt("IDs");
+        }
+        return 0;
+    }
+
+    public static void create_new_BestellungsItem(Connection dbVerbindung, Bestellung bestellung,ArrayList <Gericht> gerichte) {
+        try (Statement stmt = dbVerbindung.createStatement()) {
+            for (Gericht g : gerichte) stmt.executeQuery(
+            "INSERT INTO `bestellungs_items`(`BestellungsID`, `SpeiseID`) " +
+                "VALUES ('" + bestellung.id + "','" + g.id + "')"
+            );
+        }
+        catch (SQLException e) {
+            System.out.println("Fehler: " +  e.getMessage());;
+        }
+    }
+
+
 }

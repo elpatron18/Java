@@ -1,0 +1,67 @@
+Jul 14, 2023 9:04:52 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:04:52 CEST 2023 Bestellfenster geöffnet
+
+Jul 14, 2023 9:05:02 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:02 CEST 2023 Gericht zum Warenkorb hinzugefügt: Veggie Burger
+
+Jul 14, 2023 9:05:03 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:03 CEST 2023 Gericht zum Warenkorb hinzugefügt: Mushroom Swiss Burger
+
+Jul 14, 2023 9:05:05 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:05 CEST 2023 Warenkorb zurückgesetzt
+
+Jul 14, 2023 9:05:18 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:18 CEST 2023 Gericht zum Warenkorb hinzugefügt: Veggie Burger
+
+Jul 14, 2023 9:05:30 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:30 CEST 2023 Gericht zum Warenkorb hinzugefügt: Kleine Pommes
+
+Jul 14, 2023 9:05:41 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:41 CEST 2023 Rabattcode Trymacs überprüfen: true
+
+Jul 14, 2023 9:05:45 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:45 CEST 2023 Kauf ausgeführt: 6.713749999999999
+
+Jul 14, 2023 9:05:45 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:05:45 CEST 2023 Warenkorb zurückgesetzt
+
+Jul 14, 2023 9:06:11 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:06:11 CEST 2023 Bestellfenster geschlossen
+
+Jul 14, 2023 9:07:12 AM Projekt.LoggerUtil log
+INFORMATION: Fri Jul 14 09:07:12 CEST 2023 Bestellfenster geöffnet
+
+Jul 17, 2023 8:50:03 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:03 CEST 2023 Bestellfenster geöffnet
+
+Jul 17, 2023 8:50:12 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:12 CEST 2023 Gericht zum Warenkorb hinzugefügt: Hamburger
+
+Jul 17, 2023 8:50:13 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:13 CEST 2023 Gericht zum Warenkorb hinzugefügt: Kleine Pommes
+
+Jul 17, 2023 8:50:14 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:14 CEST 2023 Gericht zum Warenkorb hinzugefügt: Mittlere Pommes
+
+Jul 17, 2023 8:50:14 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:14 CEST 2023 Gericht zum Warenkorb hinzugefügt: Mushroom Swiss Burger
+
+Jul 17, 2023 8:50:15 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:15 CEST 2023 Gericht zum Warenkorb hinzugefügt: Veggie Burger
+
+Jul 17, 2023 8:50:21 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:21 CEST 2023 Rabattcode Trymacs überprüfen: true
+
+Jul 17, 2023 8:50:23 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:23 CEST 2023 Neue Bestellung 
+ID:5 | 19.71875
+
+Jul 17, 2023 8:50:23 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:23 CEST 2023 Kauf ausgeführt: 19.71875
+
+Jul 17, 2023 8:50:23 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:23 CEST 2023 Warenkorb zurückgesetzt
+
+Jul 17, 2023 8:50:34 AM Projekt.LoggerUtil log
+INFORMATION: Mon Jul 17 08:50:34 CEST 2023 Bestellfenster geschlossen
+

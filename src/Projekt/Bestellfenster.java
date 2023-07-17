@@ -3,27 +3,35 @@ package Projekt;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
-public class BestellfensterV2 extends JFrame {
+public class Bestellfenster extends JFrame{
 
     JTextField txtRabattcode;
     JTable table;
     JScrollPane gallerie;
     JPanel gallerie_panel;
     Warenkorb warenkorb;
-
     DecimalFormat euro = new DecimalFormat("0.00€");
 
     public static void main(String[] args) {
-        BestellfensterV2 bf = new BestellfensterV2("Test");
+
     }
 
-    public BestellfensterV2(String title) {
+    public Bestellfenster(String title) {
         super(title);
         initialize();
         setVisible(true);
+        LoggerUtil.log("Bestellfenster geöffnet");
     }
+
 
     private void initialize() {
 
@@ -31,11 +39,24 @@ public class BestellfensterV2 extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
 
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                // Hier wird die Methode aufgerufen, wenn das JFrame geschlossen wird
+                try {
+                    Restaurant.dbVerbindung.close();
+                    LoggerUtil.log("Bestellfenster geschlossen");
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+
         JPanel buttons = new JPanel();
         getContentPane().add(buttons, BorderLayout.SOUTH);
 
         JButton btnKaufen = new JButton("Kaufen");
-        btnKaufen.addActionListener(e -> warenkorb.reset());
+        btnKaufen.addActionListener(e -> warenkorb.kaufen(Restaurant.dbVerbindung));
         buttons.add(btnKaufen);
 
         JButton btnAbbrechen = new JButton("Abbrechen");
@@ -46,7 +67,14 @@ public class BestellfensterV2 extends JFrame {
         buttons.add(lbRabattcode);
 
         txtRabattcode = new JTextField();
+        JButton btnRabattcode = new JButton("Enter");
+        btnRabattcode.addActionListener(e -> {
+            System.out.println("Rabatt" + txtRabattcode.getText());
+            checkRabattcode(txtRabattcode.getText());
+        });
+
         buttons.add(txtRabattcode);
+        buttons.add(btnRabattcode);
         txtRabattcode.setColumns(10);
 
         JPanel mitte = new JPanel();
@@ -56,6 +84,7 @@ public class BestellfensterV2 extends JFrame {
         gallerie = new JScrollPane();
         gallerie.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         gallerie.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        gallerie.setBounds(0, 0, 1200, 950);
         gallerie_panel = new JPanel();
         gallerie_panel.setLayout(new GridLayout(0, 4, 10, 10));
         gallerie.setViewportView(gallerie_panel);
@@ -80,14 +109,31 @@ public class BestellfensterV2 extends JFrame {
 
     public void gerichtHinzufuegen(Gericht g) {
 
-        ImageIcon icon = new ImageIcon("Bilder/" + g.bildadresse);
+        JPanel panel = new JPanel();
 
-        JButton button = new JButton("<html>" + g.name + "<br>" + euro.format(g.preis) + "</html>", icon);
-        button.setPreferredSize(new Dimension(100, 100));
+        JButton button = new JButton(
+                "<html>" +
+                "<div style='background-color: #fefefe; width: 115px; height: 115px;display:flex;' justify-content:center; align-items:center> "
+                + "<img src='" + g.bildadresse + "' width='80' height='80'> <br>"
+                + g.name + "<br>" + euro.format(g.preis) +
+                "</div>"+
+                "</html>");
+        button.setPreferredSize(new Dimension(150, 150));
 
-        button.addActionListener(e -> warenkorb.addToWarenkorb(g.name, g.preis));
+        button.addActionListener(e -> warenkorb.addToWarenkorb(g));
 
-        button.setRolloverIcon(icon);
-        gallerie_panel.add(button);
+        //button.setIcon(scaledIcon);
+        panel.add(button);
+        gallerie_panel.add(panel);
     }
+    public void checkRabattcode(String name) {
+        double rabatt = 0;
+        for (Rabattcode r : Restaurant.codes) if (r.name.equals(name)) {
+            //System.out.println("Code gefunden");
+            rabatt = r.faktor;
+        }
+        if (rabatt != 0) warenkorb.rabattAnwenden(rabatt);
+        LoggerUtil.log("Rabattcode " + name + " überprüfen: " + (rabatt != 0));
+    }
+
 }
